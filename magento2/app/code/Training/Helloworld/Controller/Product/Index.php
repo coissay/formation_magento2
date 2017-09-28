@@ -57,10 +57,12 @@ class Index extends \Magento\Framework\App\Action\Action
     protected function getAskedProduct()
     {
         // get the asked id
-        $productId = (int) $this->getRequest()->getParam('id');
-        if (!$productId) {
+        //$productId = (int) $this->getRequest()->getParam('id');
+       /* if (!$productId) {
             return null;
-        }
+        }*/
+
+
 
         // get the product
         $product = $this->productFactory->create();
